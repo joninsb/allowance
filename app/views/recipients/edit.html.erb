@@ -1,0 +1,24 @@
+<h1>Editing recipient</h1>
+
+<% form_for(@recipient) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </p>
+  <p>
+    <%= f.label :period %><br />
+    <%= f.text_field :period %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @recipient %> |
+<%= link_to 'Back', recipients_path %>

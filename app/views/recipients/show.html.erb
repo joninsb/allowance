@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @recipient.name %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%=h @recipient.amount %>
+</p>
+
+<p>
+  <b>Period:</b>
+  <%=h @recipient.period %>
+</p>
+
+
+<%= link_to 'Edit', edit_recipient_path(@recipient) %> |
+<%= link_to 'Back', recipients_path %>

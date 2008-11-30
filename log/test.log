@@ -1,0 +1,96 @@
+  [4;36;1mSQL (0.000242)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000089)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000057)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000158)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000235)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000257)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000082)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000085)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000209)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000129)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.070320)[0m   [0mSELECT count(*) AS count_all FROM `recipients` [0m
+
+
+Processing RecipientsController#create (for 0.0.0.0 at 2008-11-12 23:11:52) [POST]
+  Session ID: 
+  Parameters: {"recipient"=>{}, "action"=>"create", "controller"=>"recipients"}
+  [4;36;1mRecipient Create (0.000320)[0m   [0;1mINSERT INTO `recipients` (`name`, `period`, `updated_at`, `amount`, `created_at`) VALUES(NULL, NULL, '2008-11-13 07:11:52', NULL, '2008-11-13 07:11:52')[0m
+Redirected to http://test.host/recipients/996332878
+Completed in 0.00682 (146 reqs/sec) | DB: 0.07679 (1126%) | 302 Found [http://test.host/recipients?]
+  [4;35;1mSQL (0.000232)[0m   [0mSELECT count(*) AS count_all FROM `recipients` [0m
+  [4;36;1mSQL (0.000807)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000074)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000183)[0m   [0;1mSELECT count(*) AS count_all FROM `recipients` [0m
+  [4;35;1mRecipient Load (0.000171)[0m   [0mSELECT * FROM `recipients` WHERE (`recipients`.`id` = 953125641) [0m
+
+
+Processing RecipientsController#destroy (for 0.0.0.0 at 2008-11-12 23:11:52) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"recipients"}
+  [4;36;1mRecipient Load (0.000202)[0m   [0;1mSELECT * FROM `recipients` WHERE (`recipients`.`id` = 953125641) [0m
+  [4;35;1mRecipient Destroy (0.000313)[0m   [0m DELETE FROM `recipients`
+ WHERE `id` = 953125641
+[0m
+Redirected to http://test.host/recipients
+Completed in 0.00131 (761 reqs/sec) | DB: 0.00198 (150%) | 302 Found [http://test.host/recipients/953125641]
+  [4;36;1mSQL (0.000142)[0m   [0;1mSELECT count(*) AS count_all FROM `recipients` [0m
+  [4;35;1mSQL (0.000684)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mRecipient Load (0.000209)[0m   [0mSELECT * FROM `recipients` WHERE (`recipients`.`id` = 953125641) [0m
+
+
+Processing RecipientsController#edit (for 0.0.0.0 at 2008-11-12 23:11:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"recipients"}
+  [4;36;1mRecipient Load (0.000233)[0m   [0;1mSELECT * FROM `recipients` WHERE (`recipients`.`id` = 953125641) [0m
+Rendering template within layouts/recipients
+Rendering recipients/edit
+Completed in 0.00550 (181 reqs/sec) | Rendering: 0.00492 (89%) | DB: 0.00133 (24%) | 200 OK [http://test.host/recipients/953125641/edit]
+  [4;35;1mSQL (0.000220)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipientsController#index (for 0.0.0.0 at 2008-11-12 23:11:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"recipients"}
+  [4;35;1mRecipient Load (0.000256)[0m   [0mSELECT * FROM `recipients` [0m
+Rendering template within layouts/recipients
+Rendering recipients/index
+Completed in 0.00571 (175 reqs/sec) | Rendering: 0.00492 (86%) | DB: 0.00054 (9%) | 200 OK [http://test.host/recipients]
+  [4;36;1mSQL (0.000138)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000071)[0m   [0mBEGIN[0m
+
+
+Processing RecipientsController#new (for 0.0.0.0 at 2008-11-12 23:11:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"recipients"}
+Rendering template within layouts/recipients
+Rendering recipients/new
+Completed in 0.00486 (205 reqs/sec) | Rendering: 0.00454 (93%) | DB: 0.00021 (4%) | 200 OK [http://test.host/recipients/new]
+  [4;36;1mSQL (0.000121)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000074)[0m   [0mBEGIN[0m
+  [4;36;1mRecipient Load (0.000254)[0m   [0;1mSELECT * FROM `recipients` WHERE (`recipients`.`id` = 953125641) [0m
+
+
+Processing RecipientsController#show (for 0.0.0.0 at 2008-11-12 23:11:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"recipients"}
+  [4;35;1mRecipient Load (0.000242)[0m   [0mSELECT * FROM `recipients` WHERE (`recipients`.`id` = 953125641) [0m
+Rendering template within layouts/recipients
+Rendering recipients/show
+Completed in 0.00568 (175 reqs/sec) | Rendering: 0.00487 (85%) | DB: 0.00069 (12%) | 200 OK [http://test.host/recipients/953125641]
+  [4;36;1mSQL (0.000153)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000067)[0m   [0mBEGIN[0m
+  [4;36;1mRecipient Load (0.000276)[0m   [0;1mSELECT * FROM `recipients` WHERE (`recipients`.`id` = 953125641) [0m
+
+
+Processing RecipientsController#update (for 0.0.0.0 at 2008-11-12 23:11:52) [PUT]
+  Session ID: 
+  Parameters: {"recipient"=>{}, "action"=>"update", "id"=>"953125641", "controller"=>"recipients"}
+  [4;35;1mRecipient Load (0.000187)[0m   [0mSELECT * FROM `recipients` WHERE (`recipients`.`id` = 953125641) [0m
+Redirected to http://test.host/recipients/953125641
+Completed in 0.00131 (762 reqs/sec) | DB: 0.00068 (52%) | 302 Found [http://test.host/recipients/953125641?]
+  [4;36;1mSQL (0.000115)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000075)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000559)[0m   [0;1mROLLBACK[0m

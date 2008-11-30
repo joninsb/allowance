@@ -1,0 +1,28 @@
+<h1>Listing recipients</h1>
+
+<div id="recipient-list">
+	<h1 id="">Allowance Recipients</h1>>	
+	<table>
+	  <tr>
+	    <th>Name</th>
+	    <th>Amount</th>
+	    <th>Period</th>
+	  </tr>
+
+	<% for recipient in @recipients %>
+		<tr class="<%= cycle('list-line-odd', 'list-line-even') %>"> 
+		    <td><%=h recipient.name %></td>
+		    <td><%=h recipient.amount %></td>
+		    <td><%=h recipient.period %></td>
+			<td class="list-actions"> 
+			<%= link_to 'Show', recipient %><br/> 
+			<%= link_to 'Edit', edit_recipient_path(recipient) %><br/> 
+		    <td><%= link_to 'Destroy', recipient, :confirm => 'Are you sure?', :method => 			:delete %></td>
+	  	</tr>
+	<% end %>
+	</table>
+</div>>
+
+<br />
+
+<%= link_to 'New recipient', new_recipient_path %>

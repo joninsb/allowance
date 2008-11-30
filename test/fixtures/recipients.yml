@@ -1,0 +1,24 @@
+# == Schema Information
+# Schema version: 20081025020017
+#
+# Table name: recipients
+#
+#  id         :integer(11)     not null, primary key
+#  name       :string(255)
+#  amount     :decimal(14, 2)
+#  period     :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  amount: 9.99
+  period: 
+
+two:
+  name: MyString
+  amount: 9.99
+  period: 
